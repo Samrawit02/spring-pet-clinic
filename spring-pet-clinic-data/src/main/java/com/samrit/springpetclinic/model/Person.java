@@ -1,15 +1,15 @@
 package com.samrit.springpetclinic.model;
 
 public class Person {
-    private String firstName;
+    private String fristName;
     private String lastName;
 
-    public String getFirstName() {
-        return firstName;
+    public String getFristName() {
+        return fristName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFristName(String fristName) {
+        this.fristName = fristName;
     }
 
     public String getLastName() {
