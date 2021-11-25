@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.samrit</groupId>
     <artifactId>spring-pet-clinic</artifactId>
-    <version>0.0.13</version>
+    <version>0.0.14-SNAPSHOT</version>
     <name>spring-pet-clinic</name>
     <description>Demo project for Spring Boot</description>
     <properties>
