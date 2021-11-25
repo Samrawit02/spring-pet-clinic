@@ -60,6 +60,7 @@ http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/Samrawit02/spring-pet-clinic.git</developerConnection>
+
     </scm>
 
 </project>
