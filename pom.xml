@@ -57,8 +57,8 @@
         </plugins>
     </build>
     <scm>
-        <url>https://github.com//Samrawit02//spring-pet-clinic.git</url>
-        <developerConnection>scm:git:https:/github.com//Samrawit02/spring-pet-clinic.git</developerConnection>
+        <url>https:/github.com/Samrawit02/spring-pet-clinic.git</url>
+        <developerConnection>scm:git:https:/github.com/Samrawit02/spring-pet-clinic.git</developerConnection>
       <tag>spring-pet-clinic-0.0.1</tag>
   </scm>
 
