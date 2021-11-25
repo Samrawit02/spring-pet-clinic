@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.samrit</groupId>
     <artifactId>spring-pet-clinic</artifactId>
-    <version>0.0.11-SNAPSHOT</version>
+    <version>0.0.12-SNAPSHOT</version>
     <name>spring-pet-clinic</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -41,8 +41,8 @@
                 <version>2.5.3</version>
                 <configuration>
                     <goals>install</goals>
-                    <pushChanges>false</pushChanges>
-                </configuration>
+<!--                    <pushChanges>false</pushChanges>-->
+               </configuration>
 
 <!--                <configuration>-->
 <!--                    <goals>install</goals>-->
