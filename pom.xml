@@ -41,7 +41,7 @@
                 <version>2.5.3</version>
                 <configuration>
                     <goals>install</goals>
-                    <pushChanges>true</pushChanges>
+
 
                </configuration>
 
@@ -52,9 +52,9 @@
         </plugins>
     </build>
     <scm>
-        <developerConnection>scm:git:https://github.com/Samrawit02/spring-pet-clinic.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:Samrawit02/spring-pet-clinic.git</developerConnection>
 
-      <tag>spring-pet-clinic-0.0.12</tag>
+      <tag>spring-pet-clinic-0.0.13</tag>
   </scm>
 
 </project>
