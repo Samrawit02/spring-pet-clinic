@@ -53,7 +53,7 @@
     <scm>
         <developerConnection>scm:git:https://github.com/Samrawit02/spring-pet-clinic.git</developerConnection>
 
-      <tag>spring-pet-clinic-0.0.10</tag>
+      <tag>spring-pet-clinic-0.0.13</tag>
   </scm>
 
 </project>
