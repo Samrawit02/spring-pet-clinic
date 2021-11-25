@@ -41,8 +41,8 @@
                 <version>2.5.3</version>
                 <configuration>
                     <goals>install</goals>
-                    <pushChanges>false</pushChanges>
-                </configuration>
+<!--                    <pushChanges>false</pushChanges>-->
+               </configuration>
 
 <!--                <configuration>-->
 <!--                    <goals>install</goals>-->
