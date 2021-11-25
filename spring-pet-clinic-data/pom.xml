@@ -3,7 +3,7 @@
     <parent>
         <artifactId>spring-pet-clinic</artifactId>
         <groupId>com.samrit</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -61,7 +61,7 @@
         </plugins>
     </build>
     <properties>
-<!--        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>-->
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
