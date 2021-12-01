@@ -1,11 +1,11 @@
 package com.samrit.springpetclinic.service.map;
 
 import com.samrit.springpetclinic.model.Vet;
-import com.samrit.springpetclinic.service.CrService;
+import com.samrit.springpetclinic.service.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
