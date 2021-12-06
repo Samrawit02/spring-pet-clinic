@@ -1,10 +1,7 @@
 package com.samrit.springpetclinic.bootstrap;
 
 import com.samrit.springpetclinic.model.*;
-import com.samrit.springpetclinic.service.OwnerService;
-import com.samrit.springpetclinic.service.PetTypeService;
-import com.samrit.springpetclinic.service.SpecialtyService;
-import com.samrit.springpetclinic.service.VetService;
+import com.samrit.springpetclinic.service.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -18,14 +15,16 @@ public class DataLoader implements CommandLineRunner {
    private final VetService vetService;
    private final PetTypeService petTypeService;
    private final SpecialtyService specialtyService;
+   private final VisitService visitService;
 
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService, VisitService visitService) {
 
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialtyService = specialtyService;
+        this.visitService = visitService;
     }
            @Override
         public void run(String... args) throws Exception {
@@ -87,8 +86,16 @@ public class DataLoader implements CommandLineRunner {
         fionaPet.setBirthDate(LocalDate.now());
         fionaPet.setName("Just cat");
         owner2.getPets().add(fionaPet);
-
         ownerService.save(owner2);
+
+        System.out.println("Loading Visit");
+        Visit catVisit = new Visit();
+        catVisit.setDescription("Visiting The cat");
+        catVisit.setDate(LocalDate.now());
+        catVisit.setPet(fionaPet);
+        visitService.save(catVisit);
+
+
 
         System.out.println("Loading Owners");
         Vet vet1 = new Vet();
@@ -107,5 +114,7 @@ public class DataLoader implements CommandLineRunner {
         vetService.save(vet2);
 
         System.out.println("Loading Vets");
+
+
     }
 }
